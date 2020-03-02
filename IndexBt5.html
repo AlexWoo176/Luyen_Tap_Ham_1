@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<script>-->
+<!--    let star = prompt('Nhập tên ngôi sao:');-->
+<!--    let star_arr1 = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];-->
+<!--    let star_arr2 = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'UrsaMajor', 'Leo'];-->
+<!--    MyFunction(star_arr1,star_arr2);-->
+<!--    function MyFunction(star1,star2) {-->
+<!--        for (let i=0;i<star1.length;i++){-->
+<!--            if (star==star1[i]){-->
+<!--                alert( star1[i]+' '+'thuộc chòm sao'+' '+ star2[i]);-->
+<!--                break;-->
+<!--            }-->
+<!--            else {-->
+<!--                alert('What happen? :)))');-->
+<!--                break;-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+
+<script>
+    stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    Zodiacs = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function findStar(star) {
+        for ( let i = 0; i < stars.length; i++){
+            if ( star == stars[i]){
+                return Zodiacs[i];
+            }
+        }
+        return "Can't found!";
+    }
+
+    let star = prompt('Enter your star you want find :');
+    document.write(findStar(star))
+</script>
+</body>
+</html>
